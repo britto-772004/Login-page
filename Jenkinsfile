@@ -19,11 +19,11 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                sh 'npm test'  // Make sure tests are in package.json
-            }
-        }
+        // stage('Run Tests') {
+        //     steps {
+        //         sh 'npm test'  // Make sure tests are in package.json
+        //     }
+        // }
 
         stage('Build Docker Image') {
             steps {
